@@ -54,7 +54,7 @@
   <main>
     <h1>Ghibli Clouds (WebGL)</h1>
     <p>Unity WebGL build host page</p>
-    <canvas id="unity-canvas" width="1280" height="720"></canvas>
+    <canvas id="unity-canvas" width="1280" height="720" aria-label="Unity WebGL game canvas"></canvas>
     <div id="status">Loading...</div>
   </main>
 
@@ -88,7 +88,7 @@
       });
     };
     script.onerror = () => {
-      status.textContent = "Missing Build/ghibli-clouds.loader.js. Build Unity WebGL output to docs/Build using the README naming convention.";
+      status.textContent = "WebGL build files not found. See README for build instructions.";
     };
 
     document.body.appendChild(script);
