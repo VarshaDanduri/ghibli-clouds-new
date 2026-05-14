@@ -26,7 +26,7 @@ Unity plugin files are included under:
 This repository now includes a web host page at `docs/index.html` for Unity WebGL output.
 
 1. Open this repo as a Unity project.
-2. Add your cloud scene and set it as the startup scene.
+2. Add your cloud scene and include it in **Build Settings**.
 3. In Unity, switch platform to **WebGL**.
 4. Build the project to `docs/Build`.
 5. Ensure your build outputs are named:

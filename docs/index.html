@@ -83,7 +83,7 @@
       }).then(() => {
         status.textContent = "Ready";
       }).catch((error) => {
-        status.textContent = "Failed to load WebGL build";
+        status.textContent = "Failed to load WebGL build. Check console for details.";
         console.error(error);
       });
     };
