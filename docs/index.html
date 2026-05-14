@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ghibli-clouds-new</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 2rem auto;
+        padding: 0 1rem;
+        max-width: 760px;
+        line-height: 1.6;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      h1, h2 {
+        line-height: 1.2;
+      }
+      code {
+        background: rgba(127, 127, 127, 0.15);
+        padding: 0.1rem 0.3rem;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ghibli-clouds-new</h1>
+    <p>Unity plugin for procedural, stylized cloud generation.</p>
+
+    <h2>Included Runtime Files</h2>
+    <ul>
+      <li><code>Assets/GhibliClouds/Runtime/WorleyNoise3D.cs</code></li>
+      <li><code>Assets/GhibliClouds/Runtime/GhibliCloudMetaMesh.cs</code></li>
+    </ul>
+
+    <h2>Quick Usage</h2>
+    <ol>
+      <li>Add the <code>Assets/GhibliClouds</code> folder to your Unity project.</li>
+      <li>Create a GameObject with a <code>MeshFilter</code> and <code>MeshRenderer</code>.</li>
+      <li>Add <code>GhibliClouds.Runtime.GhibliCloudMetaMesh</code>.</li>
+      <li>Tune noise and metaball parameters as needed.</li>
+      <li>Use <strong>Regenerate Cloud Meta Mesh</strong> to rebuild after changes.</li>
+    </ol>
+  </body>
+</html>
