@@ -21,6 +21,22 @@ Unity plugin files are included under:
    - `Metaball Count` / `Metaball Radius` / `Metaball Strength` for meta mesh blending.
 5. Use the component context menu **Regenerate Cloud Meta Mesh** to rebuild after changes.
 
+## WebGL website setup
+
+This repository now includes a web host page at `docs/index.html` for Unity WebGL output.
+
+1. Create or open a Unity project, then copy `Assets/GhibliClouds` into that project.
+2. Add your cloud scene and include it in **Build Settings**.
+3. In Unity, switch platform to **WebGL**.
+4. Build the project, then place the generated WebGL build files in `docs/Build` of this repository.
+5. Ensure the files in `docs/Build` are named:
+   - `ghibli-clouds.loader.js`
+   - `ghibli-clouds.data`
+   - `ghibli-clouds.framework.js`
+   - `ghibli-clouds.wasm`
+6. If your generated files use a different name stem, either rename them to `ghibli-clouds.*` or update `siteConfig.fileStem` in `docs/index.html`.
+7. Serve the `docs` folder (or publish it with GitHub Pages) and open `index.html`.
+
 ## GitHub Pages
 
 - A GitHub Actions workflow is included at `.github/workflows/pages.yml`.
