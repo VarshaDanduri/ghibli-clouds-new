@@ -20,3 +20,18 @@ Unity plugin files are included under:
    - `Noise Frequency` / `Noise Strength` for Worley cloud breakup.
    - `Metaball Count` / `Metaball Radius` / `Metaball Strength` for meta mesh blending.
 5. Use the component context menu **Regenerate Cloud Meta Mesh** to rebuild after changes.
+
+## WebGL website setup
+
+This repository now includes a web host page at `docs/index.html` for Unity WebGL output.
+
+1. Open this repo as a Unity project.
+2. Add your cloud scene and set it as the startup scene.
+3. In Unity, switch platform to **WebGL**.
+4. Build the project to `docs/Build`.
+5. Ensure your build outputs are named:
+   - `ghibli-clouds.loader.js`
+   - `ghibli-clouds.data`
+   - `ghibli-clouds.framework.js`
+   - `ghibli-clouds.wasm`
+6. Serve the `docs` folder (or publish it with GitHub Pages) and open `index.html`.
