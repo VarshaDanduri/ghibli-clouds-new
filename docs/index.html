@@ -61,21 +61,23 @@
   <script>
     const status = document.getElementById("status");
     const canvas = document.getElementById("unity-canvas");
-    const buildPath = "Build";
-    const productName = "ghibli-clouds";
-    const companyName = "VarshaDanduri";
-    const displayName = "Ghibli Clouds";
-    const productVersion = "1.0.0";
+    const siteConfig = {
+      buildPath: "Build",
+      fileStem: "ghibli-clouds",
+      companyName: "VarshaDanduri",
+      displayName: "Ghibli Clouds",
+      productVersion: "1.0.0"
+    };
 
-    const loaderUrl = `${buildPath}/${productName}.loader.js`;
+    const loaderUrl = `${siteConfig.buildPath}/${siteConfig.fileStem}.loader.js`;
     const config = {
-      dataUrl: `${buildPath}/${productName}.data`,
-      frameworkUrl: `${buildPath}/${productName}.framework.js`,
-      codeUrl: `${buildPath}/${productName}.wasm`,
+      dataUrl: `${siteConfig.buildPath}/${siteConfig.fileStem}.data`,
+      frameworkUrl: `${siteConfig.buildPath}/${siteConfig.fileStem}.framework.js`,
+      codeUrl: `${siteConfig.buildPath}/${siteConfig.fileStem}.wasm`,
       streamingAssetsUrl: "StreamingAssets",
-      companyName,
-      productName: displayName,
-      productVersion
+      companyName: siteConfig.companyName,
+      productName: siteConfig.displayName,
+      productVersion: siteConfig.productVersion
     };
 
     const script = document.createElement("script");

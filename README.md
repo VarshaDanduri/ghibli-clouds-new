@@ -27,7 +27,7 @@ This repository now includes a web host page at `docs/index.html` for Unity WebG
 
 1. Create or open a Unity project, then copy `Assets/GhibliClouds` into that project.
 2. Add your cloud scene and include it in **Build Settings**.
-3. In **Project Settings > Player > Product Name**, set the product name to `ghibli-clouds`.
+3. In **Project Settings > Player > Product Name**, set the product name to `ghibli-clouds` (this must match the filename stem expected by `docs/index.html`).
 4. In Unity, switch platform to **WebGL**.
 5. Build the project, then place the generated WebGL build files in `docs/Build` of this repository.
 6. Ensure the files in `docs/Build` are named:
