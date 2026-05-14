@@ -36,3 +36,9 @@ This repository now includes a web host page at `docs/index.html` for Unity WebG
    - `ghibli-clouds.wasm`
 6. If your generated files use a different name stem, either rename them to `ghibli-clouds.*` or update `siteConfig.fileStem` in `docs/index.html`.
 7. Serve the `docs` folder (or publish it with GitHub Pages) and open `index.html`.
+
+## GitHub Pages
+
+- A GitHub Actions workflow is included at `.github/workflows/pages.yml`.
+- The site content is served from `docs/index.html`.
+- After pushing to `main`, enable **Settings → Pages → Build and deployment → Source: GitHub Actions**.
