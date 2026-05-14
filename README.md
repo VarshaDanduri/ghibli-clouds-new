@@ -20,3 +20,9 @@ Unity plugin files are included under:
    - `Noise Frequency` / `Noise Strength` for Worley cloud breakup.
    - `Metaball Count` / `Metaball Radius` / `Metaball Strength` for meta mesh blending.
 5. Use the component context menu **Regenerate Cloud Meta Mesh** to rebuild after changes.
+
+## GitHub Pages
+
+- A GitHub Actions workflow is included at `.github/workflows/pages.yml`.
+- The site content is served from `docs/index.html`.
+- After pushing to `main`, enable **Settings → Pages → Build and deployment → Source: GitHub Actions**.
