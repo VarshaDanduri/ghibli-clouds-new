@@ -25,13 +25,14 @@ Unity plugin files are included under:
 
 This repository now includes a web host page at `docs/index.html` for Unity WebGL output.
 
-1. Open the repository root folder as a Unity project.
+1. In Unity Hub, click **Add** and select the repository root folder.
 2. Add your cloud scene and include it in **Build Settings**.
 3. In Unity, switch platform to **WebGL**.
 4. Build the project to `docs/Build`.
-5. Ensure your build outputs are named:
+5. In **Project Settings > Player > Product Name**, set the product name to `ghibli-clouds`.
+6. Ensure your build outputs are named:
    - `ghibli-clouds.loader.js`
    - `ghibli-clouds.data`
    - `ghibli-clouds.framework.js`
    - `ghibli-clouds.wasm`
-6. Serve the `docs` folder (or publish it with GitHub Pages) and open `index.html`.
+7. Serve the `docs` folder (or publish it with GitHub Pages) and open `index.html`.
