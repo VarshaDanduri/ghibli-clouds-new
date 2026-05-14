@@ -70,7 +70,7 @@
       frameworkUrl: `${buildPath}/${productName}.framework.js`,
       codeUrl: `${buildPath}/${productName}.wasm`,
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "GhibliClouds",
+      companyName: "Ghibli Clouds",
       productName: "Ghibli Clouds",
       productVersion: "1.0.0"
     };
@@ -88,7 +88,7 @@
       });
     };
     script.onerror = () => {
-      status.textContent = "Missing Unity WebGL loader. Build to docs/Build first.";
+      status.textContent = "Missing Build/ghibli-clouds.loader.js. Build Unity WebGL output to docs/Build using the README naming convention.";
     };
 
     document.body.appendChild(script);
