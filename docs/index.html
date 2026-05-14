@@ -63,6 +63,7 @@
     const canvas = document.getElementById("unity-canvas");
     const buildPath = "Build";
     const productName = "ghibli-clouds";
+    const companyName = "VarshaDanduri";
     const displayName = "Ghibli Clouds";
     const productVersion = "1.0.0";
 
@@ -72,7 +73,7 @@
       frameworkUrl: `${buildPath}/${productName}.framework.js`,
       codeUrl: `${buildPath}/${productName}.wasm`,
       streamingAssetsUrl: "StreamingAssets",
-      companyName: displayName,
+      companyName,
       productName: displayName,
       productVersion
     };
